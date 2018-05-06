@@ -47,6 +47,7 @@ OpenWrt/LEDE LuCI for MentoHUST
 
 软件包的配置文件路径: `/etc/config/mentohust`  
 此文件为 UCI 配置文件, 配置方式可参考 [OpenWrt Wiki][uci]  
+
 编译
 ---
 
