@@ -35,6 +35,7 @@ OpenWrt/LEDE LuCI for MentoHUST
 软件包不显式依赖二进制文件 `mentohust`.
 可通过编译安装 [MentoHUST-OpenWrt-ipk](https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk) 获得.  
 只有当文件存在时, 相应的功能才可被使用, 并显示相应的 LuCI 设置界面.  
+**请注意：mentohust 二进制文件必须支持所有参数。如：-u -p -n -i -m -g -s -o -t -e -r -a -d -b -y -f -c -w**  
 
  可执行文件  | 可选 | 功能        |
  ------------|------|-------------|
