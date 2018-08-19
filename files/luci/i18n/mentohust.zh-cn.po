@@ -126,3 +126,27 @@ msgstr "DHCP的脚本"
 
 msgid "DHCP script"
 msgstr "进行DHCP的脚本"
+
+msgid "RUNNING"
+msgstr "运行中"
+
+msgid "NOT RUNNING"
+msgstr "未运行"
+
+msgid "ONLINE"
+msgstr "能访问互联网"
+
+msgid "NOT ONLINE"
+msgstr "不能访问互联网"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Network Status"
+msgstr "网络状态"
+
+msgid "Pinghost not set"
+msgstr "没有设置Ping主机"
+
+msgid "CLear log"
+msgstr "清除日志"
