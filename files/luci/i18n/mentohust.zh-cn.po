@@ -148,5 +148,5 @@ msgstr "网络状态"
 msgid "Pinghost not set"
 msgstr "没有设置Ping主机"
 
-msgid "CLear log"
+msgid "Clear log"
 msgstr "清除日志"

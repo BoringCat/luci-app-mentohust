@@ -57,9 +57,9 @@ run_mentohust()
         if [ "$shownotify" != "5" ] &&  [ "$shownotify" != "" ]; then cmd=$cmd" -y"$shownotify;fi
         if [ "$version" != "0.00" ] &&  [ "$version" != "" ]; then cmd=$cmd" -v"$version;fi
         if [ "$datafile" != "/etc/mentohust/" ] &&  [ "$datafile" != "" ]; then cmd=$cmd" -f"$datafile;fi
-        if [ "$dhcpscript" != "udhcpc -i" ] &&  [ "$dhcpscript" != "" ]; then cmd=$cmd" -c"$dhcpscript;fi
+        if [ "$dhcpscript" != "udhcpc -i" ] &&  [ "$dhcpscript" != "" ]; then cmd=$cmd" -c'"$dhcpscript"'";fi
 
-        mentohust -u$username -p$password -n$ifname -b3 $cmd
+        /bin/ash -c "mentohust -u$username -p$password -n$ifname -b3 -w $cmd"
     fi
 }
 
