@@ -10,7 +10,7 @@ local function is_online(ipaddr)
     if ipaddr == "0.0.0.0" then 
         return translate("Pinghost not set")
     end
-    if luci.sys.call("ping %s -c1 -w1 >/dev/null 2>&1" %{ipaddr}) == 0 then
+    if luci.sys.call("ping -c1 -w1 %s >/dev/null 2>&1" %{ipaddr}) == 0 then
         return translate("ONLINE")
     else
         return translate("NOT ONLINE")
