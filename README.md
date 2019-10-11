@@ -60,7 +60,8 @@ cd lede-sdk-*
 # Clone 项目
 git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
 # 编译 po2lmo (如果有po2lmo可跳过)
-pushd package/luci-app-mentohust/tools/po2lmo
+git clone https://github.com/openwrt-dev/po2lmo.git
+pushd po2lmo
 make && sudo make install
 popd
 # 选择要编译的包 LuCI -> 3. Applications
