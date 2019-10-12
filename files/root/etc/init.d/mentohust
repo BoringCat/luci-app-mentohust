@@ -60,6 +60,8 @@ run_mentohust()
         if [ "$dhcpscript" != "udhcpc -i" ] &&  [ "$dhcpscript" != "" ]; then cmd=$cmd" -c'"$dhcpscript"'";fi
 
         /bin/ash -c "mentohust -u$username -p$password -n$ifname -b3 -w $cmd"
+    else
+        /bin/ash -c "mentohust -k"
     fi
 }
 
